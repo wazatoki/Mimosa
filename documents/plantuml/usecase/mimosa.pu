@@ -1,0 +1,24 @@
+@startuml mimosa
+
+left to right direction
+
+rectangle system {
+    (menu) ..> (order) : include
+    (check)
+    (order list) .. (order)
+    (order list) <.. (order cancel) : extends
+
+    (checked order list)
+    (complete order)
+    (master maintenance)
+}
+:customer: -- (menu)
+:customer: -- (order list) : 参照のみ
+:customer: -- (check)
+
+:staff: -- (checked order list)
+:staff: -- (master maintenance)
+:staff: -- (order list) 
+:staff: -- (complete order)
+
+@enduml

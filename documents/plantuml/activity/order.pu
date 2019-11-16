@@ -1,0 +1,13 @@
+@startuml order
+    start
+    :top;
+    :menu;
+    :select category;
+    :select item;
+    if(click description) then (yes)
+    :description;
+    endif
+    :order;
+    :top;
+    end
+@enduml

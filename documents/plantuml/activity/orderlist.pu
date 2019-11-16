@@ -1,0 +1,10 @@
+@startuml order list
+
+    start
+    :top;
+    :click check;
+    :show order list;
+    :top;
+    end
+
+@enduml

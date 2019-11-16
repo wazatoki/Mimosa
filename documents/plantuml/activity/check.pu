@@ -1,0 +1,10 @@
+@startuml check
+    start
+    :top;
+    :click check;
+    :show order data;
+    :check;
+    :store order data in localstrage;
+    :top;
+    end
+@enduml
