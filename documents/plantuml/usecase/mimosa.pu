@@ -8,8 +8,8 @@ rectangle system {
     (order list) .. (order)
     (order list) <.. (order cancel) : extends
 
+    (order list) <.. (complete order) : extends
     (checked order list)
-    (complete order)
     (master maintenance)
 }
 :customer: -- (menu)
@@ -20,5 +20,6 @@ rectangle system {
 :staff: -- (master maintenance)
 :staff: -- (order list) 
 :staff: -- (complete order)
+:staff: -- (order cancel)
 
 @enduml
