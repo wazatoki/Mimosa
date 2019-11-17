@@ -1,0 +1,18 @@
+<p class="contents-title">オーダー 一覧</p>
+<div *ngFor="let order of orders">
+    <mat-grid-list cols="8" rowHeight="3em">
+        <mat-grid-tile [colspan]="1" [rowspan]="2"><span class="seat-id">{{ order.seatID }}</span></mat-grid-tile>
+        <mat-grid-tile [colspan]="2"><span class="order-date">{{ order.date | date : 'M/d/ hh:mm'}}</span>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="4"><span class="item-name">{{ order.item.name }}</span></mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="2"><span class="quantity">{{ order.quantity }}</span><span
+                class="unit">{{ order.item.unit }}</span></mat-grid-tile>
+        <mat-grid-tile [colspan]="3">
+            <button mat-flat-button color="primary"> 完了 </button>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="3">
+            <button mat-flat-button color="warn"> 取消 </button>
+        </mat-grid-tile>
+    </mat-grid-list>
+    <mat-divider></mat-divider>
+</div>

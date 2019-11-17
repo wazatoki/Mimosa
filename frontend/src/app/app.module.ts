@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatButtonModule } from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
 import { MatTableModule } from '@angular/material/table';
 import { HeaderComponent } from './header/header.component';
 import { LayoutHeaderSidebarContentsComponent } from './layout-header-sidebar-contents/layout-header-sidebar-contents.component';
 import { LayoutHeaderContentsComponent } from './layout-header-contents/layout-header-contents.component';
 import { IndexComponent } from './index/index.component';
+import { OrderListComponent } from './order-list/order-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,8 @@ import { IndexComponent } from './index/index.component';
     HeaderComponent,
     LayoutHeaderSidebarContentsComponent,
     LayoutHeaderContentsComponent,
-    IndexComponent
+    IndexComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +30,9 @@ import { IndexComponent } from './index/index.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatListModule,
+    MatGridListModule,
+    MatButtonModule,
+    MatDividerModule,
     MatTableModule
   ],
   providers: [],
