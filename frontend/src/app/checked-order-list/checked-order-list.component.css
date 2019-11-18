@@ -1,0 +1,24 @@
+.mat-list-item-content {
+    height: 8em;
+}
+
+.mat-grid-list {
+    width: 100%;
+    height: 100%;
+}
+
+.seat-id {
+    font-size: xx-large;
+}
+
+.order-date {
+    font-size: small;
+}
+
+.item-name {
+    font-size: larger;
+}
+
+.quantity {
+    font-size: large;
+}

@@ -14,6 +14,7 @@ import { LayoutHeaderSidebarContentsComponent } from './layout-header-sidebar-co
 import { LayoutHeaderContentsComponent } from './layout-header-contents/layout-header-contents.component';
 import { IndexComponent } from './index/index.component';
 import { OrderListComponent } from './order-list/order-list.component';
+import { CheckedOrderListComponent } from './checked-order-list/checked-order-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OrderListComponent } from './order-list/order-list.component';
     LayoutHeaderSidebarContentsComponent,
     LayoutHeaderContentsComponent,
     IndexComponent,
-    OrderListComponent
+    OrderListComponent,
+    CheckedOrderListComponent
   ],
   imports: [
     BrowserModule,
