@@ -6,7 +6,7 @@ import { Order } from '../model/order';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatDividerModule } from '@angular/material/divider';
 
 describe('OrderListComponent', () => {
   let component: OrderListComponent;
@@ -72,7 +72,7 @@ describe('OrderListComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  fit('should display data', () => {
+  it('should display data', () => {
     const orderListSeatDe: DebugElement = fixture.debugElement.query(By.css('.seat-id'));
     const orderListSeatEl: HTMLElement = orderListSeatDe.nativeElement;
     expect(orderListSeatEl.textContent).toContain('1');
