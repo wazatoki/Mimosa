@@ -15,6 +15,7 @@ import { LayoutHeaderContentsComponent } from './layout-header-contents/layout-h
 import { IndexComponent } from './index/index.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { CheckedOrderListComponent } from './checked-order-list/checked-order-list.component';
+import { AlertDiarogComponent } from './alert-diarog/alert-diarog.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CheckedOrderListComponent } from './checked-order-list/checked-order-li
     LayoutHeaderContentsComponent,
     IndexComponent,
     OrderListComponent,
-    CheckedOrderListComponent
+    CheckedOrderListComponent,
+    AlertDiarogComponent
   ],
   imports: [
     BrowserModule,
