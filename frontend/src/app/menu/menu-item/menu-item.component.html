@@ -1,0 +1,24 @@
+<div *ngFor="let item of items">
+    <mat-grid-list cols="8" rowHeight="3em">
+        <mat-grid-tile [colspan]="1" [rowspan]="2"><span class="menu-row-order">{{ item.rowOrder }}</span>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="5"><span class="menu-name">{{ item.name }}</span>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="2"><span class="menu-price">{{ item.price }}</span></mat-grid-tile>
+
+        <mat-grid-tile [colspan]="3">
+            <input class="menu-quantity">
+            <span class="menu-unit">{{ item.unit }}</span>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2">
+            <button mat-flat-button color="primary"> 注文 </button>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="2">
+            <button mat-flat-button color="basic"> 詳細 </button>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+    <mat-divider></mat-divider>
+</div>

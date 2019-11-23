@@ -15,6 +15,7 @@ class Item {
     name: string
     price: number
     unit: string
+    rowOrder: number
     categories: Category[]
     orders: Order[]
 }
