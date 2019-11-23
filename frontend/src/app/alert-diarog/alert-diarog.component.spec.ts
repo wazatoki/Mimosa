@@ -27,7 +27,8 @@ describe('AlertDiarogComponent', () => {
           useValue: spy
         },
         {
-          provide: MAT_DIALOG_DATA, useValue: {} 
+          provide: MAT_DIALOG_DATA,
+          useValue: {}
         },
       ],
     }).compileComponents();
@@ -62,9 +63,9 @@ describe('AlertDiarogComponent', () => {
 
   it('on click chancel', () => {
     fixture.detectChanges();
-    const cancel:HTMLElement = debugElement.query(By.css('button.cancel-button')).nativeElement;
+    const cancel: HTMLElement = debugElement.query(By.css('button.cancel-button')).nativeElement;
     cancel.dispatchEvent(new Event('click'));
     fixture.detectChanges();
-    expect(component.dialogRef.close).toHaveBeenCalled()
+    expect(component.dialogRef.close).toHaveBeenCalled();
   });
 });
