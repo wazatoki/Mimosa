@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { TRUE, FALSE } from '../model/boolean';
 
 @Component({
   selector: 'app-alert-diarog',
@@ -8,6 +9,9 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 })
 export class AlertDiarogComponent implements OnInit {
 
+  RESULT_TRUE = TRUE;
+  RERULT_FALSE = FALSE;
+
   constructor(
     public dialogRef: MatDialogRef<AlertDiarogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
@@ -15,7 +19,7 @@ export class AlertDiarogComponent implements OnInit {
   ngOnInit() {
   }
 
-  onNoClick(): void {
+  onCancelClick(): void {
     this.dialogRef.close();
   }
 }

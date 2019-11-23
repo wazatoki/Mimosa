@@ -3,6 +3,6 @@
     <p class="dialog-contents">{{ data.contents }}</p>
 </div>
 <div mat-dialog-actions>
-    <button class='cancel-button' mat-button (click)="onNoClick()" cdkFocusInitial> 取消 </button>
-    <button class='ok-button' mat-button [mat-dialog-close]="data.animal">OK</button>
+    <button class="cancel-button" mat-button [mat-dialog-close]="RERULT_FALSE" (click)="onCancelClick()" cdkFocusInitial> 取消 </button>
+    <button class="ok-button" mat-button [mat-dialog-close]="RESULT_TRUE">OK</button>
 </div>
