@@ -20,6 +20,7 @@ import { CheckedOrderListComponent } from './checked-order-list/checked-order-li
 import { AlertDiarogComponent } from './alert-diarog/alert-diarog.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuItemComponent } from './menu/menu-item/menu-item.component';
+import { MenuDetailComponent } from './menu/menu-detail/menu-detail.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MenuItemComponent } from './menu/menu-item/menu-item.component';
     CheckedOrderListComponent,
     AlertDiarogComponent,
     MenuComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    MenuDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ export class Item {
     name: string;
     price: number;
     unit: string;
+    detail: string;
     rowOrder: number;
     categories: Category[];
     orders: Order[];

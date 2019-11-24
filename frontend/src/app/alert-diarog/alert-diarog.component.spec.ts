@@ -11,7 +11,6 @@ describe('AlertDiarogComponent', () => {
   let component: AlertDiarogComponent;
   let fixture: ComponentFixture<AlertDiarogComponent>;
   let debugElement: DebugElement;
-  let element: HTMLElement;
 
   beforeEach( async( () => {
     const spy = jasmine.createSpyObj('MatDialogRef', ['close']);
@@ -38,7 +37,6 @@ describe('AlertDiarogComponent', () => {
     fixture = TestBed.createComponent(AlertDiarogComponent);
     component = fixture.componentInstance;
     debugElement = fixture.debugElement;
-    element = debugElement.nativeElement;
 
     fixture.detectChanges();
   });

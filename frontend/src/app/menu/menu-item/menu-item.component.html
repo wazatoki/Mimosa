@@ -4,7 +4,7 @@
         </mat-grid-tile>
         <mat-grid-tile [colspan]="5"><span class="menu-name">{{ item.name }}</span>
         </mat-grid-tile>
-        <mat-grid-tile [colspan]="2"><span class="menu-price">{{ item.price }}</span></mat-grid-tile>
+        <mat-grid-tile [colspan]="2"><span class="menu-price">{{ item.price | currency:'JPY' }}</span></mat-grid-tile>
 
         <mat-grid-tile [colspan]="3">
             <input class="menu-quantity">
@@ -16,7 +16,7 @@
         </mat-grid-tile>
 
         <mat-grid-tile [colspan]="2">
-            <button mat-flat-button color="basic"> 詳細 </button>
+            <a mat-flat-button color="basic" routerLink="menu/detail/{{ item.id }}"> 詳細 </a>
         </mat-grid-tile>
 
     </mat-grid-list>

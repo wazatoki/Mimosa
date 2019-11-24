@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule  } from '@angular/router/testing';
 
 import { MenuComponent } from './menu.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
@@ -24,6 +25,7 @@ describe('MenuComponent', () => {
           name: 'sample name 1',
           price: 10000,
           unit: '個',
+          detail: '',
           rowOrder: 1,
           categories: [],
           orders: [],
@@ -33,6 +35,7 @@ describe('MenuComponent', () => {
           name: 'sample name 2',
           price: 20000,
           unit: '皿',
+          detail: '',
           rowOrder: 2,
           categories: [],
           orders: [],
@@ -48,6 +51,7 @@ describe('MenuComponent', () => {
           name: 'sample name 3',
           price: 30000,
           unit: '個',
+          detail: '',
           rowOrder: 1,
           categories: [],
           orders: [],
@@ -57,6 +61,7 @@ describe('MenuComponent', () => {
           name: 'sample name 2',
           price: 20000,
           unit: '皿',
+          detail: '',
           rowOrder: 2,
           categories: [],
           orders: [],
@@ -73,6 +78,7 @@ describe('MenuComponent', () => {
       ],
       imports: [
         BrowserAnimationsModule,
+        RouterTestingModule,
         MatListModule,
         MatGridListModule,
         MatButtonModule,

@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterTestingModule  } from '@angular/router/testing';
 
 import { MenuItemComponent } from './menu-item.component';
 import { Item } from '../../model/item';
@@ -19,6 +20,7 @@ describe('MenuItemComponent', () => {
       name: 'sample name 1',
       price: 10000,
       unit: '個',
+      detail: '',
       rowOrder: 1,
       categories: [],
       orders: [],
@@ -28,6 +30,7 @@ describe('MenuItemComponent', () => {
       name: 'sample name 2',
       price: 20000,
       unit: '皿',
+      detail: '',
       rowOrder: 2,
       categories: [],
       orders: [],
@@ -39,6 +42,7 @@ describe('MenuItemComponent', () => {
       declarations: [ MenuItemComponent ],
       imports: [
         BrowserAnimationsModule,
+        RouterTestingModule,
         MatListModule,
         MatGridListModule,
         MatButtonModule,
@@ -56,7 +60,7 @@ describe('MenuItemComponent', () => {
     fixture.detectChanges();
   });
 
-  fit('should create', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
