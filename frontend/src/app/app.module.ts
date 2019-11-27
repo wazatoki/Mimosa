@@ -7,7 +7,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
-import {MatDividerModule} from '@angular/material/divider';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
 import { HeaderComponent } from './header/header.component';
 import { LayoutHeaderSidebarContentsComponent } from './layout-header-sidebar-contents/layout-header-sidebar-contents.component';
@@ -16,6 +18,9 @@ import { IndexComponent } from './index/index.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { CheckedOrderListComponent } from './checked-order-list/checked-order-list.component';
 import { AlertDiarogComponent } from './alert-diarog/alert-diarog.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenuItemComponent } from './menu/menu-item/menu-item.component';
+import { MenuDetailComponent } from './menu/menu-detail/menu-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,10 @@ import { AlertDiarogComponent } from './alert-diarog/alert-diarog.component';
     IndexComponent,
     OrderListComponent,
     CheckedOrderListComponent,
-    AlertDiarogComponent
+    AlertDiarogComponent,
+    MenuComponent,
+    MenuItemComponent,
+    MenuDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +45,8 @@ import { AlertDiarogComponent } from './alert-diarog/alert-diarog.component';
     MatGridListModule,
     MatButtonModule,
     MatDividerModule,
+    MatExpansionModule,
+    MatDialogModule,
     MatTableModule
   ],
   providers: [],

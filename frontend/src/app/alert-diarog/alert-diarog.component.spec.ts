@@ -11,7 +11,6 @@ describe('AlertDiarogComponent', () => {
   let component: AlertDiarogComponent;
   let fixture: ComponentFixture<AlertDiarogComponent>;
   let debugElement: DebugElement;
-  let element: HTMLElement;
 
   beforeEach( async( () => {
     const spy = jasmine.createSpyObj('MatDialogRef', ['close']);
@@ -27,7 +26,8 @@ describe('AlertDiarogComponent', () => {
           useValue: spy
         },
         {
-          provide: MAT_DIALOG_DATA, useValue: {} 
+          provide: MAT_DIALOG_DATA,
+          useValue: {}
         },
       ],
     }).compileComponents();
@@ -37,7 +37,6 @@ describe('AlertDiarogComponent', () => {
     fixture = TestBed.createComponent(AlertDiarogComponent);
     component = fixture.componentInstance;
     debugElement = fixture.debugElement;
-    element = debugElement.nativeElement;
 
     fixture.detectChanges();
   });
@@ -62,9 +61,9 @@ describe('AlertDiarogComponent', () => {
 
   it('on click chancel', () => {
     fixture.detectChanges();
-    const cancel:HTMLElement = debugElement.query(By.css('button.cancel-button')).nativeElement;
+    const cancel: HTMLElement = debugElement.query(By.css('button.cancel-button')).nativeElement;
     cancel.dispatchEvent(new Event('click'));
     fixture.detectChanges();
-    expect(component.dialogRef.close).toHaveBeenCalled()
+    expect(component.dialogRef.close).toHaveBeenCalled();
   });
 });

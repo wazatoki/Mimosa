@@ -1,0 +1,6 @@
+<p>{{ item.name }}</p>
+<p>{{ item.price | currency:'JPY' }} {{item.unit}}</p>
+<p>{{ item.detail }}</p>
+
+<button class="order-button" mat-flat-button color="primary" (click)="order()"> 注文 </button>
+<button class="go-back-button" mat-flat-button color="basic" (click)="goBack()">戻る</button>

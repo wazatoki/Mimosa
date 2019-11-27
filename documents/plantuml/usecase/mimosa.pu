@@ -4,8 +4,8 @@ left to right direction
 
 rectangle system {
     (menu) ..> (order) : include
-    (check)
-    (order list) .. (order)
+    
+    (order list) <.. (check) : extends
     (order list) <.. (order cancel) : extends
 
     (order list) <.. (complete order) : extends

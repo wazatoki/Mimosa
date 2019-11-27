@@ -1,0 +1,10 @@
+<p class="contents-title">メニュー</p>
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let category of categories">
+        <mat-expansion-panel-header>
+            <mat-panel-title>{{ category.name }}</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <app-menu-item [items]="category.items"></app-menu-item>
+    </mat-expansion-panel>
+</mat-accordion>
