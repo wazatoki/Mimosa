@@ -1,1 +1,22 @@
-<p>seat works!</p>
+<app-layout-header-sidebar-contents>
+
+    <div class='sidebar'>
+        <p class="contents-title">座席コード 一覧</p>
+        <mat-action-list>
+            <button mat-list-item (click)="save()"> 新規作成 </button>
+        </mat-action-list>
+        <mat-divider></mat-divider>
+        <mat-action-list>
+            <button mat-list-item (click)="undo()"> 削除 </button>
+        </mat-action-list>`
+    </div>
+
+    <div class='contents'>
+        <mat-selection-list>
+            <mat-list-option checkboxPosition="before" *ngFor="let seat of seats">
+                {{ seat.id }}
+            </mat-list-option>
+        </mat-selection-list>
+    </div>
+
+</app-layout-header-sidebar-contents>

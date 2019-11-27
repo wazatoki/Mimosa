@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { HeaderComponent } from './header/header.component';
 import { LayoutHeaderSidebarContentsComponent } from './layout-header-sidebar-contents/layout-header-sidebar-contents.component';
@@ -24,6 +25,7 @@ import { MenuDetailComponent } from './menu/menu-detail/menu-detail.component';
 import { ItemComponent } from './master/item/item.component';
 import { SeatComponent } from './master/seat/seat.component';
 import { CategoryComponent } from './master/category/category.component';
+import { InputFormComponent } from './master/seat/input-form/input-form.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { CategoryComponent } from './master/category/category.component';
     MenuDetailComponent,
     ItemComponent,
     SeatComponent,
-    CategoryComponent
+    CategoryComponent,
+    InputFormComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +56,7 @@ import { CategoryComponent } from './master/category/category.component';
     MatDividerModule,
     MatExpansionModule,
     MatDialogModule,
+    MatCardModule,
     MatTableModule
   ],
   providers: [],

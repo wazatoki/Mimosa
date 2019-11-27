@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Seat } from '../../model/seat';
+
 @Component({
   selector: 'app-seat',
   templateUrl: './seat.component.html',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeatComponent implements OnInit {
 
-  constructor() { }
+  seats: Seat[];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
