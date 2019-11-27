@@ -21,6 +21,9 @@ import { AlertDiarogComponent } from './alert-diarog/alert-diarog.component';
 import { MenuComponent } from './menu/menu.component';
 import { MenuItemComponent } from './menu/menu-item/menu-item.component';
 import { MenuDetailComponent } from './menu/menu-detail/menu-detail.component';
+import { ItemComponent } from './master/item/item.component';
+import { SeatComponent } from './master/seat/seat.component';
+import { CategoryComponent } from './master/category/category.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { MenuDetailComponent } from './menu/menu-detail/menu-detail.component';
     AlertDiarogComponent,
     MenuComponent,
     MenuItemComponent,
-    MenuDetailComponent
+    MenuDetailComponent,
+    ItemComponent,
+    SeatComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
